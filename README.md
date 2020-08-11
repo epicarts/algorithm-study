@@ -2,7 +2,7 @@
 > 알고리즘 스터디를 위한 저장소입니다.
 
 ## Programming Language 
-* Java, C++, Python
+* Java, C++, Python, JavaScript
 
 ## 알고리즘 사이트
 * **baekjoon**: https://www.acmicpc.net/
@@ -40,7 +40,7 @@
 
 ## ```파일이름.md``` Rule
 * 각 문제별 ```파일이름.md``` Rule은  다음을 참고한다
-    * **문제 주소**, **문제 접근 방법**, **코드**, **시간복잡도**, **공간복잡도**, 를 작성한다.
+    * **문제 주소**, **문제 접근 방법** 를 작성한다.
 
 
 ## 스터디 Rule
