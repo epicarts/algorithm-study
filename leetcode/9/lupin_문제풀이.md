@@ -18,3 +18,5 @@ https://leetcode.com/problems/palindrome-number/
 
 입력 : 10
  출력 : 거짓
+
+ 
