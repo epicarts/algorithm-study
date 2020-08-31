@@ -1,23 +1,25 @@
-var a = prompt('입력');
-var b = prompt('입력');
 
-var results = new Array();
+var n = 3;
+var m = 16;
+
+function getPrimeNumber() {  
+
+    var results = [];   
+    
+    for ( i = n; i <= m; i++) {
 
 
-
-function getPrimeNumber(){
-
-for (let i = a; i<=b;i++){
-    if (a<0){break;}
-    let isPrmeNumber = true;
-    for(let j=a; j<b;j++){
-        if(i&j===0){
-            isPrimeNumber=false;
-        }
-    }
-    if(isPrimeNumber){
-        results.push(i);
-    }
-}
-return results;
-}
+       var isPrimeNumber = true; 
+       for (j = 2; j < i; j++) { 
+      
+         if (i % j === 0) {   
+   
+           isPrimeNumber = false;       
+         }     
+       }      
+       if (isPrimeNumber==true) {
+         results.push(i);
+       }
+    } return results;
+  }
+getPrimeNumber();

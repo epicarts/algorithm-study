@@ -1,5 +1,6 @@
 # 문제 주소
-https://www.acmicpc.net/problem/2750
+https://www.acmicpc.net/problem/1929
 
 ## 문제 접근 방법
-랜덤 숫자 부여 후 sort 함수로 오름차순 정렬
+n과m값을 지정 후 그 사이에 있는 소수를 구하는 문제
+n부터 시작하여 2 이상의, n전까지 나눴을때, 1과 n으로 나눠지는 값들을 저장시켜 출력한다.
