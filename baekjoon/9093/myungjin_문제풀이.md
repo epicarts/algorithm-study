@@ -63,7 +63,7 @@ https://github.com/jungmyungjin/algorithm_baekjoon/blob/master/9093_word_reverse
 
 ### 결과
 
----
+-
 
 - 메모리 : 1244 KB
 - 시간  : 72 ms
