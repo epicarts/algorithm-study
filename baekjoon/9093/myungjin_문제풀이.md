@@ -64,5 +64,8 @@ https://github.com/jungmyungjin/algorithm_baekjoon/blob/master/9093_word_reverse
 ### 결과
 
 ---
+메모리 : 1244 KB
+시간  : 72 ms
+코드길이 : 2059 B
 
 생각보다 효율적이지 않은 부분이 많은 듯 하다... 😭
