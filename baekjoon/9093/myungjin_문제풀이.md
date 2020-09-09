@@ -1,7 +1,5 @@
 # 문제 주소
 
----
-
 https://www.acmicpc.net/problem/9093
 
 ## 문제 접근 방법
@@ -12,8 +10,6 @@ https://www.acmicpc.net/problem/9093
 - array를 사용하지 않고 stack형태의 list의 구조로 사용한 이유는 잉여 메모리를 줄이려고 했기 때문이다.
 
 ## 전체 함수 구조
-
----
 
 ### main
 
@@ -36,7 +32,6 @@ https://www.acmicpc.net/problem/9093
 
 ## 필요한 데이터 형
 
----
 
 ### 문자를 담는 노드
 
@@ -61,9 +56,8 @@ typedef struct s_word
 ## code
 https://github.com/jungmyungjin/algorithm_baekjoon/blob/master/9093_word_reverse/main.c
 
-### 결과
+## 결과
 
----
 
 - 메모리 : 1244 KB
 - 시간  : 72 ms
