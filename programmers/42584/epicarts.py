@@ -10,3 +10,21 @@ def solution(prices):
             if after_price < price:
                 break #값이 작은게 나오면, 중간에 리턴
     return answer
+
+
+from collections import deque
+
+def solution(prices):
+    answer = deque()
+    prices = deque(prices)
+
+    while(prices):
+        count = 0
+        p = prices.popleft() # n만큼 컬리던 것을 O(1) 로 변환
+        for i in prices:
+            count+=1
+            if i < p :
+                break
+
+        answer.append(count)
+    return list(answer)
