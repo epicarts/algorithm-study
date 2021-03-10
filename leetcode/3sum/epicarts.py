@@ -28,6 +28,7 @@ class Solution:
                     while left < right and nums[right] == nums[right - 1]:
                         right -= 1
 
+                    # 중복값의 끝까지 찾았으므로, 그 다음으로 값을 하나 증가 시켜주어야함
                     left += 1
                     # right -= 1
         return results
