@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class CrazyKyeong {
    public static void main(String[] args) {
        int A = 0;
        int B = 0;
