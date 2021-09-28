@@ -29,6 +29,7 @@ if (IntStream.of(A).filter(i -> i % 4 == 0).filter(i -> i % 100 != 0 || i % 400 
 
 ### 2. 속도 비교
 - 절대적인 수치는 아니겠지만 구조가 복잡해서 인지 람다식이 미묘하게 더 느렸음. 
+- 위가 람다, 아래가 삼항 연산
 
 ![김경한 아래가 일반 if 위에는 람다 if](https://user-images.githubusercontent.com/48428850/135041573-7a775237-4474-49b3-8a81-fae946f4fc90.png)
 
