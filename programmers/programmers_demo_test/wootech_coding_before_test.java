@@ -18,7 +18,6 @@ class Solution {
         ArrayList<Integer> arr_y = new ArrayList<>();
         for(int i=0;i<v.length;i++){
             for(int j=0;j<v[i].length;j++){
-                //System.out.print(v[i][j]+" ");
                 if(flag==0){
                     if(!arr_x.contains(v[i][j])){
                         arr_x.add(v[i][j]);

@@ -4,17 +4,17 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.HashMap;
 
-public class phonenumber_list {
+public class phonenumber_list_v2 {
     public static void main(String[] args) {
         //String[] arr = {"119", "97674223", "1195524421"};
-        String[] arr = {"123","456","789"};
+        //String[] arr = {"123","456","789"};
         //String[] arr = {"12","123","1235","567","88"};
-        //String[] arr = {"12","132123","1421335","567","88"};
+        String[] arr = {"12","132123","1421335","567","88"};
         //String[] arr = {"88","2123","1422123","567","812"};
         //String[] arr = {"88","2123","1422123","567","82822222"};
         //String[] arr = {"88","2123","1422123","567","8822222"};
-        Solution sol = new Solution();
-        System.out.println(sol.solution(arr));
+        Solution2 sol = new Solution2();
+        System.out.println(sol.Solution2(arr));
         //String s1 = "가나다";
         //String s2 = "가나다";
         //System.out.println(s2.indexOf(s1));
@@ -29,12 +29,12 @@ public class phonenumber_list {
  
  */
 
-class Solution {
-    public boolean solution(String[] phone_book) {
+class Solution2 {
+    public boolean Solution2(String[] phone_book) {
         boolean answer = true;
-        Comparator<String> c = new Comparator<String>() { public int compare(String s1, String s2) { return Integer.compare( s1.length(),s2.length()); } };
-        Arrays.sort(phone_book,c);
-        //Arrays.sort(phone_book);
+        //Comparator<String> c = new Comparator<String>() { public int compare(String s1, String s2) { return Integer.compare( s1.length(),s2.length()); } };
+        //Arrays.sort(phone_book,c);
+        Arrays.sort(phone_book);
         HashMap<Integer,String> map = new HashMap<>();
         for(int i=0;i<phone_book.length;i++){
             map.put(i, phone_book[i]);
@@ -42,24 +42,12 @@ class Solution {
         int len = map.size();
         System.out.println("map 총 사이즈 : "+len);
         System.out.println("=====");
-        for(int j=0;j<len;j++){
+        for(int j=0;j<len-1;j++){
             String s =map.get(j);
-            System.out.println("s가 뭔지 : "+s);
-            System.out.println("지울거 : "+map.get(j));
-            System.out.println("j의 수 : "+j);
-            
-            map.remove(j);
-            System.out.println("map 구성 : "+map);
-            System.out.print("조회목록 : ");
-            System.out.println("map 사이즈 : "+map.size());
-            for(int i = j+1;i<map.size()+j+1;i++){
-                System.out.print(map.get(i)+" ");
-                if(map.get(i).indexOf(s)==0){
-                    return false;
-                }
-            }
+            System.out.println("map.get(j+1) : " + map.get(j+1));
+            System.out.println("s : " + s);
             System.out.println();
-            System.out.println();
+            if(map.get(j+1).startsWith(s)) return false;
         }
         return answer;
     }
